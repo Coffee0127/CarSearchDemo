@@ -1,0 +1,17 @@
+body {
+    padding-top: 50px;
+}
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+.content-wrapper {
+    margin: 0 auto;
+    float: none;
+}
+.m-t-1em {
+    margin-top: 1em;
+}
+.table-hover>tbody>tr:hover {
+    cursor: pointer;
+}
