@@ -19,4 +19,10 @@ export class ListboxComponent implements OnInit {
       this.content = (<HTMLInputElement> event.target).value;
     }
   }
+
+  showText2(event: KeyboardEvent, input: HTMLInputElement) {
+    if (event.keyCode == 13) {
+      this.content = input.value;
+    }
+  }
 }
