@@ -7,9 +7,9 @@
     <div>
         The _counter % 3 =
         <span [ngSwitch]="_counter % 3">
-            <template [ngSwitchCase]="0">0</template>
-            <template [ngSwitchCase]="1">1</template>
-            <template ngSwitchDefault>2</template>
+            <span *ngSwitchCase="0">0</span>
+            <span *ngSwitchCase="1">1</span>
+            <span *ngSwitchDefault>2</span>
         </span>
     </div>
     <div *ngIf="_counter % 2 == 0" class="content-wrapper text-left col-lg-10">
