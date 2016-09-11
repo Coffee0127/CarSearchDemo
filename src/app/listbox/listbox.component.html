@@ -18,55 +18,10 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Primera</td>
-                <td>Nissan</td>
-                <td>$ 23,320</td>
-            </tr>
-            <tr>
-                <td>Cefiro</td>
-                <td>Nissan</td>
-                <td>$ 38,165</td>
-            </tr>
-            <tr>
-                <td>Camry</td>
-                <td>Toyota</td>
-                <td>$ 24,170</td>
-            </tr>
-            <tr>
-                <td>Century</td>
-                <td>Toyota</td>
-                <td>$ 28,730</td>
-            </tr>
-            <tr>
-                <td>Sigma</td>
-                <td>Mitsubishi</td>
-                <td>$ 54,120</td>
-            </tr>
-            <tr>
-                <td>Challenger</td>
-                <td>Mitsubishi</td>
-                <td>$ 58,750</td>
-            </tr>
-            <tr>
-                <td>Civic</td>
-                <td>Honda</td>
-                <td>$ 17,479</td>
-            </tr>
-            <tr>
-                <td>New Beetle</td>
-                <td>Volkswagen</td>
-                <td>$ 67,540</td>
-            </tr>
-            <tr>
-                <td>Golf V</td>
-                <td>Volkswagen</td>
-                <td>$ 78,200</td>
-            </tr>
-            <tr>
-                <td>Neon</td>
-                <td>Chrysler</td>
-                <td>$ 85,400</td>
+            <tr *ngFor="let car of data">
+                <td>{{car.model}}</td>
+                <td>{{car.make}}</td>
+                <td>{{car.price}}</td>
             </tr>
         </tbody>
     </table>
