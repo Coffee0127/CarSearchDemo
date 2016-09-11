@@ -12,13 +12,15 @@
     <table class="table table-bordered table-striped table-hover">
         <thead>
             <tr>
+                <th>Row Index</th>
                 <th>Model</th>
                 <th>Make</th>
                 <th>Price</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let car of data">
+            <tr *ngFor="let car of data; let i = index;">
+                <td>{{i}}</td>
                 <td>{{car.model}}</td>
                 <td>{{car.make}}</td>
                 <td>{{car.price}}</td>
