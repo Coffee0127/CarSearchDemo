@@ -2,7 +2,7 @@
 
 <div class="starter-template">
     <!--<h1>{{pageTitle}}</h1>-->
-    <h1 [innerHTML]="pageTitle" class="big" [class.blue]="_counter % 2 == 0" [class.red]="_counter % 2 != 0" (click)="plus()"></h1>
+    <h1 [innerHTML]="pageTitle" class="big" [ngClass]="_counter % 2 == 0 ? 'blue' : 'red'" (click)="plus()"></h1>
     <!--<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>-->
     <div class="content-wrapper text-left col-lg-10">
         <div class="col-lg-6">
