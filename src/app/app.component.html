@@ -6,7 +6,7 @@
         [style.font-size]="_counter % 2 == 0 ? '48px' : '18px'"
         (click)="plus()"></h1>
     <!--<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>-->
-    <div class="content-wrapper text-left col-lg-10">
+    <div *ngIf="_counter % 2 == 0" class="content-wrapper text-left col-lg-10">
         <div class="col-lg-6">
             <app-listbox></app-listbox>
         </div>
