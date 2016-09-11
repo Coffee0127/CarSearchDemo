@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  pageTitle = '<i>Car Search Engine</i>';
+  private _pageTitle = '<i>Car Search Engine</i> ';
+  private _counter = 0;
+  pageTitle = this._pageTitle + this._counter;
+
+  plus() {
+    this.pageTitle = this._pageTitle + (++this._counter);
+  }
 }

@@ -1,3 +1,9 @@
+.big {
+    font-size: 48px;
+}
 .blue {
     color: blue;
+}
+.red {
+    color: red;
 }
