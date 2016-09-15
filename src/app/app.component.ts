@@ -11,6 +11,8 @@ export class AppComponent {
   private _counter = 0;
   pageTitle = this._pageTitle + this._counter;
 
+  selectedCar;
+
   plus() {
     this.pageTitle = this._pageTitle + (++this._counter);
   }

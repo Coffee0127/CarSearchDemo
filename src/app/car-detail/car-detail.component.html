@@ -1,12 +1,12 @@
-<div class="row m-t-1em">
+<div *ngIf="selectedCar.id" class="row m-t-1em">
     <div class="media">
         <div class="media-left">
-            <img src="/assets/img/car1.png" />
+            <img [src]="selectedCar.preview" />
         </div>
         <div class="media-body">
-            <h4 class="media-heading"><span>Honda</span> <span>Civic</span></h4>
-            <h5 class="media-heading">$ 17,479</h5>
-            <div>The eighth generation Honda Civic is produced since 2006. It is available as a coupe, hatchback and sedan. Models produced for the North American market have a different styling. At the moment there are four petrol engines and one diesel developed for this car. The 1.4-liter petrol is more suitable for the settled driving around town. The 1.8-liter petrol, developing 140 hp is a willing performer. The 2.2-liter diesel is similar to the Accord's unit. It accelerates rapidly and is economical as well. The Honda Civic is also available with a hybrid engine. In this case engine is coupled with an automatic transmission only. The 2.0-liter model is available with the paddle shift gearbox.</div>
+            <h4 class="media-heading"><span>{{selectedCar.make}}</span> <span>{{selectedCar.model}}</span></h4>
+            <h5 class="media-heading">{{selectedCar.price}}</h5>
+            <div>{{selectedCar.description}}</div>
         </div>
     </div>
 </div>

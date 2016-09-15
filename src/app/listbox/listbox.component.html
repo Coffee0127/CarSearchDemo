@@ -19,7 +19,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr app-car-record *ngFor="let car of data; let i = index;" [i]="i" [car]="car"></tr>
+            <tr app-car-record *ngFor="let car of data; let i = index;" [i]="i" [car]="car" (click)="showDetail($event, car)"></tr>
         </tbody>
     </table>
 </div>
