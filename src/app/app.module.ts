@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { ListboxComponent } from './listbox/listbox.component';
 import { CarDetailComponent } from './car-detail/car-detail.component';
+import { CarRecordComponent } from './car-record/car-record.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     ListboxComponent,
-    CarDetailComponent
+    CarDetailComponent,
+    CarRecordComponent
   ],
   imports: [
     BrowserModule,
