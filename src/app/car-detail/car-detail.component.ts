@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Car } from '../shared/car';
+import { ICar } from '../shared/icar';
 
 @Component({
   selector: 'app-car-detail',
@@ -8,7 +8,7 @@ import { Car } from '../shared/car';
 })
 export class CarDetailComponent implements OnInit {
 
-  private _selectedCar: Car = new Car();
+  private _selectedCar: ICar = {};
 
   get selectedCar() {
     return this._selectedCar;
@@ -17,11 +17,7 @@ export class CarDetailComponent implements OnInit {
   @Input()
   set selectedCar(value) {
     if (value) {
-      if (value instanceof Car) {
-        this._selectedCar = value;
-      } else if (typeof value === 'string') {
-        this._selectedCar = <Car> JSON.parse(<string> value);
-      }
+      this._selectedCar = <ICar> JSON.parse(<string> value);
     }
   }
 
