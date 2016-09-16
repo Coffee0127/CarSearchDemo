@@ -8,18 +8,8 @@ import { ICar } from '../shared/icar';
 })
 export class CarDetailComponent implements OnInit {
 
-  private _selectedCar: ICar = {};
-
-  get selectedCar() {
-    return this._selectedCar;
-  }
-
   @Input()
-  set selectedCar(value) {
-    if (value) {
-      this._selectedCar = <ICar> JSON.parse(<string> value);
-    }
-  }
+  selectedCar: ICar;
 
   constructor() { }
 

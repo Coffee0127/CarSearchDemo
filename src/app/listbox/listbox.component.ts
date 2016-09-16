@@ -37,6 +37,6 @@ export class ListboxComponent implements OnInit {
   }
 
   showDetail(event: MouseEvent, car: ICar) {
-    this.selectedCar.emit(JSON.stringify(car));
+    this.selectedCar.emit(car);
   }
 }

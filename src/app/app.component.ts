@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ICar } from './shared/icar';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ export class AppComponent {
   private _counter = 0;
   pageTitle = this._pageTitle + this._counter;
 
-  selectedCar;
+  selectedCar: ICar;
 
   plus() {
     this.pageTitle = this._pageTitle + (++this._counter);
