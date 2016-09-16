@@ -2,7 +2,7 @@
     <label for="keyword">What car are you searching for? <span [innerHTML]="content"></span><span>{{inputPageTitle}}</span></label>
     <div class="input-group">
         <input #box id="keyword" type="text" class="form-control" placeholder="Model or Make is available here, e.g: Toyota"
-            (keyup.enter)="searchService.doSearch(box.value)">
+            (keyup.enter)="doSearch(box.value)">
         <span class="input-group-btn">
             <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
         </span>
