@@ -93,4 +93,15 @@ export class SearchService {
   constructor() {
     this.datas = this.DEFAULT_DATAS;
   }
+
+  doSearch(keyword: string) {
+    if (keyword) {
+      this.datas = this.DEFAULT_DATAS.filter((value: ICar) => {
+        return value.make.toLowerCase().indexOf(keyword.toLowerCase()) != -1 ||
+          value.model.toLowerCase().indexOf(keyword.toLowerCase()) != -1;
+      });
+    } else {
+      this.datas = this.DEFAULT_DATAS;
+    }
+  }
 }
