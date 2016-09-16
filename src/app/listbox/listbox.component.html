@@ -4,7 +4,7 @@
         <input #box id="keyword" type="text" class="form-control" placeholder="Model or Make is available here, e.g: Toyota"
             (keyup.enter)="doSearch(box.value)">
         <span class="input-group-btn">
-            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+            <button class="btn btn-default" type="button" (click)="doSearch(box.value)"><span class="glyphicon glyphicon-search"></span></button>
         </span>
     </div>
 </div>
