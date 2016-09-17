@@ -8,6 +8,7 @@ import { ListboxComponent } from './listbox/listbox.component';
 import { CarDetailComponent } from './car-detail/car-detail.component';
 import { CarRecordComponent } from './car-record/car-record.component';
 import { MyPipePipe } from './my-pipe.pipe';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MyPipePipe } from './my-pipe.pipe';
   imports: [
     BrowserModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   entryComponents: [AppComponent],
