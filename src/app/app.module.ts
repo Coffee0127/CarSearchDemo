@@ -13,7 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-import { routing, appRoutingProviders } from './app.routing';
+import { MyRoutingModule, appRoutingProviders } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,7 @@ import { routing, appRoutingProviders } from './app.routing';
     CommonModule,
     FormsModule,
     HttpModule,
-    routing
+    MyRoutingModule
   ],
   providers: [
     appRoutingProviders
