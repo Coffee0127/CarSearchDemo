@@ -62263,7 +62263,7 @@ module.exports = ""
 /* 642 */
 /***/ function(module, exports) {
 
-module.exports = ""
+module.exports = ".big {\r\n    font-size: 48px;\r\n}\r\n.blue {\r\n    color: blue;\r\n}\r\n.red {\r\n    color: red;\r\n}"
 
 /***/ },
 /* 643 */
