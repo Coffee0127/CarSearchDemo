@@ -9,6 +9,11 @@ export class NavComponent implements OnInit {
 
   projectName = 'Angular2 Car Search';
 
+  aboutObj = {
+    hyperLink: 'https://angular.io/',
+    'dash-title': 'About Angular'
+  };
+
   constructor() { }
 
   ngOnInit() {
