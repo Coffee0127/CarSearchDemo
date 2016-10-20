@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  projectName = 'Angular2 Car Search';
+
   constructor() { }
 
   ngOnInit() {
