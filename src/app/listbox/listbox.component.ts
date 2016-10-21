@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListboxComponent implements OnInit {
 
+  content = '';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  showText(event: KeyboardEvent) {
+    if (event.keyCode == 13) {
+      this.content = (<HTMLInputElement> event.target).value;
+    }
   }
 
 }
