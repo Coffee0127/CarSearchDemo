@@ -2,6 +2,10 @@
     font-size: 48px;
 }
 
+.small {
+    font-size: 28px;
+}
+
 .blue {
     color: blue;
 }

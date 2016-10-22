@@ -14,4 +14,14 @@ export class AppComponent {
   plus() {
     this.title = this._title + (++this.counter);
   }
+
+  setClasses() {
+    let classes = {
+      blue: this.counter % 2 == 0,
+      big: this.counter % 2 == 0,
+      red: this.counter % 2 != 0,
+      small: this.counter % 2 != 0
+    };
+    return classes;
+  }
 }
