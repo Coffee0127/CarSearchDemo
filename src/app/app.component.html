@@ -3,7 +3,14 @@
 <div class="starter-template">
     <button (click)="plus()">++</button>
     <h1 [innerHTML]="title" [ngClass]="setClasses()" [ngStyle]="setStyles()"></h1>
-    <!--<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>-->
+    <div>
+        The _counter % 3 =
+        <span [ngSwitch]="counter % 3">
+            <template [ngSwitchCase]="0">0</template>
+            <template [ngSwitchCase]="1">1</template>
+            <template ngSwitchDefault>2</template>
+        </span>
+    </div>
     <div *ngIf="counter % 2 == 0" class="content-wrapper text-left col-lg-10">
         <div class="col-lg-6">
             <app-listbox></app-listbox>
