@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '<i>Car Search Engine</i>';
+
+  private _title = '<i>Car Search Engine</i> ';
+  counter = 0;
+  title = this._title + this.counter;
+
+  plus() {
+    this.title = this._title + (++this.counter);
+  }
 }
