@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { ListboxComponent } from './listbox/listbox.component';
+import { CarDetailComponent } from './car-detail/car-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    ListboxComponent
+    ListboxComponent,
+    CarDetailComponent
   ],
   imports: [
     BrowserModule,
