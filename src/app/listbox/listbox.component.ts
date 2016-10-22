@@ -14,9 +14,9 @@ export class ListboxComponent implements OnInit {
   ngOnInit() {
   }
 
-  showText(event: KeyboardEvent) {
+  showText(event: KeyboardEvent, input: HTMLInputElement) {
     if (event.keyCode == 13) {
-      this.content = (<HTMLInputElement> event.target).value;
+      this.content = input.value;
     }
   }
 
