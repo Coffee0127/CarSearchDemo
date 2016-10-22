@@ -3,13 +3,11 @@
 <div class="starter-template">
     <button (click)="plus()">++</button>
     <h1 [innerHTML]="title" [ngClass]="setClasses()" [ngStyle]="setStyles()"></h1>
-    <div>
+    <div [ngSwitch]="counter % 3">
         The _counter % 3 =
-        <span [ngSwitch]="counter % 3">
-            <template [ngSwitchCase]="0">0</template>
-            <template [ngSwitchCase]="1">1</template>
-            <template ngSwitchDefault>2</template>
-        </span>
+        <span *ngSwitchCase="0">0</span>
+        <span *ngSwitchCase="1">1</span>
+        <span *ngSwitchDefault>2</span>
     </div>
     <div *ngIf="counter % 2 == 0" class="content-wrapper text-left col-lg-10">
         <div class="col-lg-6">
