@@ -2,7 +2,9 @@
 
 <div class="starter-template">
     <button (click)="plus()">++</button>
-    <h1 [innerHTML]="title" class="big" [class]="counter % 2 == 0 ? 'blue' : 'red'"></h1>
+    <h1 [innerHTML]="title" class="big"
+        [class.blue]="counter % 2 == 0"
+        [class.red]="counter % 2 != 0"></h1>
     <!--<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>-->
     <div class="content-wrapper text-left col-lg-10">
         <div class="col-lg-6">
