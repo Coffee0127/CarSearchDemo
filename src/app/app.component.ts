@@ -24,4 +24,12 @@ export class AppComponent {
     };
     return classes;
   }
+
+  setStyles() {
+    let styles = {
+      'text-decoration': this.counter % 2 == 0 ? 'underline' : 'none',
+      'font-weight': this.counter % 2 == 0 ? '500' : '200'
+    };
+    return styles;
+  }
 }
