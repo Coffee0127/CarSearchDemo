@@ -1,5 +1,5 @@
 <div class="row">
-    <label for="keyword">What car are you searching for? <span [innerHTML]="content"></span></label>
+    <label for="keyword">What car are you searching for? <span [innerHTML]="content"></span><span [innerHTML]="inputTitle"></span></label>
     <div class="input-group">
         <input #box id="keyword" type="text" class="form-control" placeholder="Model or Make is available here, e.g: Toyota"
             [value]="content"
