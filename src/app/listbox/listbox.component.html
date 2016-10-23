@@ -20,7 +20,7 @@
             </tr>
         </thead>
         <tbody>
-            <app-car-record *ngFor="let car of data; let i = index; let isEvenIndex = even;" [ngClass]="{'even': isEvenIndex}" [i]="i" [car]="car"></app-car-record>
+            <tr app-car-record *ngFor="let car of data; let i = index; let isEvenIndex = even;" [ngClass]="{'even': isEvenIndex}" [i]="i" [car]="car"></tr>
         </tbody>
     </table>
 </div>
