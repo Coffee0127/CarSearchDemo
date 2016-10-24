@@ -11,10 +11,10 @@
     </div>
     <div *ngIf="counter % 2 == 0" class="content-wrapper text-left col-lg-10">
         <div class="col-lg-6">
-            <app-listbox [inputTitle]="title"></app-listbox>
+            <app-listbox [inputTitle]="title" (selectedCar)="selectedCar=$event"></app-listbox>
         </div>
         <div class="col-lg-6">
-            <app-car-detail></app-car-detail>
+            <app-car-detail [selectedCar]="selectedCar"></app-car-detail>
         </div>
     </div>
 </div><!-- /.container -->

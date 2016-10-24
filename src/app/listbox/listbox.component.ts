@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-listbox',
@@ -11,6 +11,9 @@ export class ListboxComponent implements OnInit {
   inputTitle = '';
 
   content = '';
+
+  @Output()
+  private selectedCar = new EventEmitter();
 
   data = [
     {
@@ -106,4 +109,7 @@ export class ListboxComponent implements OnInit {
     }
   }
 
+  showDetail(car) {
+    this.selectedCar.emit(car);
+  }
 }
