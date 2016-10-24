@@ -31,4 +31,9 @@ export class ListboxComponent implements OnInit {
   showDetail(car) {
     this.selectedCar.emit(car);
   }
+
+  doSearch(keyword) {
+    this.searchService.doSearch(keyword);
+    this.selectedCar.emit(null);
+  }
 }
