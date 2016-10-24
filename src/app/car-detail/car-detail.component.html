@@ -5,7 +5,7 @@
         </div>
         <div class="media-body">
             <h4 class="media-heading"><span>{{selectedCar.make}}</span> <span>{{selectedCar.model}}</span></h4>
-            <h5 class="media-heading">{{selectedCar.price}}</h5>
+            <h5 class="media-heading">{{selectedCar.price | myCurrency}}</h5>
             <div>{{selectedCar.description}}</div>
         </div>
     </div>
