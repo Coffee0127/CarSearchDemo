@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
+import { ICar } from './shared/icar';
 
 @Injectable()
 export class SearchService {
 
-  data = [
+  data: ICar[];
+
+  DEFAULT_DATA: ICar[] = [
     {
       "id": 1,
       "model": "Primera",
@@ -86,6 +89,18 @@ export class SearchService {
     }
   ];
 
-  constructor() { }
+  constructor() {
+    // this.doSearch();
+  }
 
+  doSearch(keyword?) {
+    if (keyword) {
+      this.data = this.DEFAULT_DATA.filter((value: ICar) => {
+        return value.make.toLowerCase().indexOf(keyword.toLowerCase()) != -1 ||
+          value.model.toLowerCase().indexOf(keyword.toLowerCase()) != -1;
+      });
+    } else {
+      this.data = this.DEFAULT_DATA;
+    }
+  }
 }

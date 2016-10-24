@@ -2,10 +2,9 @@
     <label for="keyword">What car are you searching for? <span [innerHTML]="content"></span><span [innerHTML]="inputTitle"></span></label>
     <div class="input-group">
         <input #box id="keyword" type="text" class="form-control" placeholder="Model or Make is available here, e.g: Toyota"
-            [value]="content"
-            (input)="content = $event.target.value">
+            (keyup.enter)="searchService.doSearch(box.value)">
         <span class="input-group-btn">
-            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+            <button class="btn btn-default" type="button" (click)="searchService.doSearch(box.value)"><span class="glyphicon glyphicon-search"></span></button>
         </span>
     </div>
 </div>
@@ -21,6 +20,9 @@
         </thead>
         <tbody>
             <tr app-car-record *ngFor="let car of searchService.data; let i = index; let isEvenIndex = even;" [ngClass]="{'even': isEvenIndex}" [i]="i" [car]="car" (click)="showDetail(car)"></tr>
+            <tr *ngIf="!searchService.data || searchService.data.length == 0">
+                <td colspan="4" class="text-center">No car found in the result.</td>
+            </tr>
         </tbody>
     </table>
 </div>
