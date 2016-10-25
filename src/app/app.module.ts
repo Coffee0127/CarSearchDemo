@@ -14,6 +14,8 @@ import { HomeComponent } from './home/home.component';
 import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { Subpage1Component } from './page1/subpage1/subpage1.component';
+import { Subpage2Component } from './page1/subpage2/subpage2.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HomeComponent,
     Page1Component,
     Page2Component,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    Subpage1Component,
+    Subpage2Component
   ],
   imports: [
     BrowserModule,
