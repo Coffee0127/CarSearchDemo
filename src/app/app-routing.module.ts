@@ -16,7 +16,8 @@ const routes: Routes = [
       children: [
         { path: '', redirectTo: 'subpage1' },
         { path: 'subpage1', component: Subpage1Component },
-        { path: 'subpage2', component: Subpage2Component }
+        { path: 'subpage2', component: Subpage2Component },
+        { path: ':id', component: PageDetailComponent }
       ]
     },
     { path: 'page2', component: Page2Component },

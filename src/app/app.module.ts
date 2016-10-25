@@ -16,6 +16,7 @@ import { Page2Component } from './page2/page2.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { Subpage1Component } from './page1/subpage1/subpage1.component';
 import { Subpage2Component } from './page1/subpage2/subpage2.component';
+import { PageDetailComponent } from './page1/page-detail/page-detail.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { Subpage2Component } from './page1/subpage2/subpage2.component';
     Page2Component,
     PageNotFoundComponent,
     Subpage1Component,
-    Subpage2Component
+    Subpage2Component,
+    PageDetailComponent
   ],
   imports: [
     BrowserModule,
