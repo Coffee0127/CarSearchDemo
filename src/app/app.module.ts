@@ -13,6 +13,7 @@ import { MyCurrencyPipe } from './shared/my-currency.pipe';
 import { HomeComponent } from './home/home.component';
 import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { Page2Component } from './page2/page2.component';
     MyCurrencyPipe,
     HomeComponent,
     Page1Component,
-    Page2Component
+    Page2Component,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
