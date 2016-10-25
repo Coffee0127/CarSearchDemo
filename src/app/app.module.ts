@@ -10,6 +10,9 @@ import { ListboxComponent } from './listbox/listbox.component';
 import { CarDetailComponent } from './car-detail/car-detail.component';
 import { CarRecordComponent } from './car-record/car-record.component';
 import { MyCurrencyPipe } from './shared/my-currency.pipe';
+import { HomeComponent } from './home/home.component';
+import { Page1Component } from './page1/page1.component';
+import { Page2Component } from './page2/page2.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { MyCurrencyPipe } from './shared/my-currency.pipe';
     ListboxComponent,
     CarDetailComponent,
     CarRecordComponent,
-    MyCurrencyPipe
+    MyCurrencyPipe,
+    HomeComponent,
+    Page1Component,
+    Page2Component
   ],
   imports: [
     BrowserModule,

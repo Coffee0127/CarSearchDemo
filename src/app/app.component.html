@@ -1,20 +1,3 @@
 <app-nav></app-nav>
 
-<div class="starter-template">
-    <button (click)="plus()">++</button>
-    <h1 [innerHTML]="title" [ngClass]="setClasses()" [ngStyle]="setStyles()"></h1>
-    <div [ngSwitch]="counter % 3">
-        The _counter % 3 =
-        <span *ngSwitchCase="0">0</span>
-        <span *ngSwitchCase="1">1</span>
-        <span *ngSwitchDefault>2</span>
-    </div>
-    <div *ngIf="counter % 2 == 0" class="content-wrapper text-left col-lg-10">
-        <div class="col-lg-6">
-            <app-listbox [inputTitle]="title" (selectedCar)="selectedCar=$event"></app-listbox>
-        </div>
-        <div class="col-lg-6">
-            <app-car-detail [selectedCar]="selectedCar"></app-car-detail>
-        </div>
-    </div>
-</div><!-- /.container -->
+<router-outlet></router-outlet>
