@@ -15,6 +15,7 @@
     + 資料繫節
     + 建立服務元件
     + 相依注入與 Http 服務
+
 ### 課程要求
 + 需對 HTML / CSS / JavaScript 語法有基礎了解
 + 需自備筆電並安裝好實作環境
@@ -59,7 +60,7 @@
 ### 驗證 [Angular-CLI](https://cli.angular.io/)
 * 開啟「命令提示字元」視窗 (Windows) 或「Terminal 應用程式」(macOS)，並依序執行以下指令
 * 建立 myNG2Demo 專案
-    + `ng new myNG2Demo`
+    + `ng new myNG2Demo --routing`
     + 過程中會自動建立 Angular2 專案檔案
 * 進入 myNG2Demo 資料夾
     + `cd myNG2Demo`
